@@ -1,0 +1,120 @@
+/* 
+    Created on : 10/02/2016, 14:57:27
+    Author     : tcavalin
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    border: 0;
+    outline: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+body > header #github {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+body > header {
+    background: #333333;
+    background: -moz-linear-gradient(left,  #333333 0%, #444444 100%);
+    background: -webkit-linear-gradient(left,  #333333 0%,#444444 100%);
+    background: linear-gradient(to right,  #333333 0%,#444444 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#444444',GradientType=1 );
+    
+    padding: 30px 0;
+    
+    width: 100%;
+    
+    color: #FFF;
+    text-align: center;
+}
+
+body > header h1 {
+    margin: 10px 0 20px 0;
+    
+    font-size: 42px;
+    
+    display: inline-block;
+}
+
+body > header h3 {
+    font-size: 14px;
+    font-style: italic;
+    color: #EEE;
+}
+
+section {
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    
+    margin: 0 0 10px 0;
+}
+
+section article {
+    margin: 0 0 20px 0;
+    border-bottom: 1px dotted #EEE;
+    padding: 0 0 20px 0;
+}
+section article:last-of-type {
+    margin: 0;
+    border-bottom: 0;
+    padding: 0;
+}
+
+section p {
+    line-height: 28px;
+}
+
+section code,
+section pre {
+    background-color: #EEE;
+    
+    padding: 4px;
+    margin: 0;
+    
+    font-size: 14px;
+    
+    border-radius: 3px;
+}
+
+section pre {
+    padding: 10px;
+    margin: 15px 0;
+}
+
+body > footer {
+    padding: 30px 0;
+    margin: 20px 0 0 0;
+    
+    width: 100%;
+    
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    
+    border-top: 1px dotted #EEE;
+    
+    display: inline-block;
+}
+
+body > footer a {
+    color: #999;
+    text-decoration: none;
+}
+body > footer a:hover {
+    text-decoration: underline;
+}
