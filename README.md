@@ -1,5 +1,5 @@
 # stepProgress
-A simple Step Progress Bar using HTML and CSS3.
+A simple markup component step-by-step for the organization of sequences processes using HTML and CSS3.
 
 ![steps](https://cloud.githubusercontent.com/assets/6153386/13013794/36805868-d198-11e5-9b2e-e1e3c4b87825.png)
 
