@@ -1,0 +1,132 @@
+/* 
+    Created on : 11/02/2016, 14:11:50
+    Author     : tcavalin
+*/
+
+/* Mixins */
+
+@mixin shadow($h-shadow, $v-shadow : '', $blur : '', $spread : '', $color : '', $inset : '', $important : '') {
+    box-shadow: #{$inset} $h-shadow #{$v-shadow} #{$blur} #{$spread} #{$color} #{$important};
+    -moz-box-shadow: #{$inset} $h-shadow #{$v-shadow} #{$blur} #{$spread} #{$color} #{$important};
+    -webkit-box-shadow: #{$inset} $h-shadow #{$v-shadow} #{$blur} #{$spread} #{$color} #{$important};
+}
+
+@mixin radius($geralTopLeft, $topRight : '', $bottomRight : '', $bottomLeft : '') {
+    border-radius: $geralTopLeft #{$topRight} #{$bottomRight} #{$bottomLeft};
+    -moz-border-radius: $geralTopLeft #{$topRight} #{$bottomRight} #{$bottomLeft};
+    -webkit-border-radius: $geralTopLeft #{$topRight} #{$bottomRight} #{$bottomLeft};
+    -ms-border-radius: $geralTopLeft #{$topRight} #{$bottomRight} #{$bottomLeft};
+}
+
+.steps {
+    min-height: 90px;
+    
+    padding: 30px 0 0 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    position: relative;
+  
+    .steps-container {
+        background: #DDD;
+
+        height: 10px;
+        width: 100%;
+
+        @include radius(10px);
+
+        margin: 0;
+
+        list-style: none;
+
+        li {
+            text-align: center;
+
+            list-style: none;
+
+            float: left;
+
+            .step {
+                padding: 0 50px;
+                
+                .step-image {
+                    margin: -14px 0 0 0;
+
+                    span {
+                        background-color: #DDD;
+
+                        display: block;
+
+                        width: 37px;
+                        height: 37px;
+
+                        margin: 0 auto;
+
+                        @include radius(37px);
+                    }
+                }
+                
+                .step-current {
+                    font-size: 11px;
+                    font-style: italic;
+                    color: #999;
+                    
+                    margin: 8px 0 0 0;
+                }
+                
+                .step-description {
+                    font-size: 13px;
+                    font-style: italic;
+                    color: #538897;
+                }
+            }
+            
+            &.activated {
+                
+                .step {
+                    
+                    .step-image {
+                        
+                        span {
+                            background-color: #5DC177;
+                            
+                            &:after {
+                                background-color: #FFF;
+                                
+                                display: block;
+                                content: '';
+                                
+                                position: absolute;
+                                z-index: 1;
+                                
+                                width: 27px;
+                                height: 27px;
+                                
+                                margin: 5px;
+                                
+                                @include radius(27px);
+                                
+                                @include shadow(4px, 4px, 0px, 0px, rgba(0,0,0,0.15));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .step-bar {
+        background-color: #5DC177;
+        
+        height: 10px;
+        
+        position: absolute;
+        top: 30px;
+        
+        @include radius(10px, 0, 0, 10px);
+        
+        &.last {
+            @include radius(10px);
+        }
+    }
+}
