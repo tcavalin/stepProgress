@@ -1,6 +1,8 @@
 # stepProgress
 A simple Step Progress Bar using HTML and CSS3.
 
+![steps](https://cloud.githubusercontent.com/assets/6153386/13013794/36805868-d198-11e5-9b2e-e1e3c4b87825.png)
+
 ## Basic usage ##
 
 The "stepProgress" can be created using the following syntax:
