@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>stepProgress - A simple Step Progress Bar using HTML and CSS3.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="step-progress.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>stepProgress</h1>
+            <h3>A simple Step Progress Bar using HTML and CSS3.</h3>
+            <a href="https://github.com/tcavalin/stepProgress" id="github" target="_blank" title=""><img src="images/github.png" /></a>
+        </header>
+
+        <section>
+            <h2>Basic usage:</h2>
+            <article>
+                <p>The "stepProgress" can be created using the following syntax:</p>
+                <pre>
+&lt;div class="steps"&gt;
+    &lt;ul class="steps-container"&gt;
+        &lt;li style="width:100%;" class="activated"&gt;
+            &lt;div class="step"&gt;
+                &lt;div class="step-image"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="step-current"&gt;Etapa 1&lt;/div&gt;
+                &lt;div class="step-description"&gt;Contexto&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="step-bar" style="width: 75%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </article>
+            <article>
+                <p>You can spice up adding other <code>&lt;li&gt;</code> tags and adjusting the size of each. Add the class <code>class="activated"</code> to mark each completed step.</p>
+                <br />
+                <div class="steps">
+                    <ul class="steps-container">
+                        <li style="width:33%;" class="activated">
+                            <div class="step">
+                                <div class="step-image"><span></span></div>
+                                <div class="step-current">Etapa 1</div>
+                                <div class="step-description">Contexto</div>
+                            </div>
+                        </li>
+                        <li style="width:33%;">
+                            <div class="step">
+                                <div class="step-image"><span></span></div>
+                                <div class="step-current">Etapa 2</div>
+                                <div class="step-description">Selecionar</div>
+                            </div>
+                        </li>
+                        <li style="width:33%;">
+                            <div class="step">
+                                <div class="step-image"><span></span></div>
+                                <div class="step-current">Etapa 3</div>
+                                <div class="step-description">Finalizar</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="step-bar" style="width: 33%;"></div>
+                </div>
+                <pre>
+&lt;div class="steps"&gt;
+    &lt;ul class="steps-container"&gt;
+        &lt;li style="width:33%;" class="activated"&gt;
+            &lt;div class="step"&gt;
+                &lt;div class="step-image"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="step-current"&gt;Etapa 1&lt;/div&gt;
+                &lt;div class="step-description"&gt;Contexto&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li style="width:33%;"&gt;
+            &lt;div class="step"&gt;
+                &lt;div class="step-image"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="step-current"&gt;Etapa 2&lt;/div&gt;
+                &lt;div class="step-description"&gt;Selecionar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li style="width:33%;"&gt;
+            &lt;div class="step"&gt;
+                &lt;div class="step-image"&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="step-current"&gt;Etapa 3&lt;/div&gt;
+                &lt;div class="step-description"&gt;Finalizar&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class="step-bar" style="width: 33%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </article>
+        </section>
+
+        <footer>
+            <a href="https://github.com/tcavalin/stepProgress" target="_blank">stepProgress</a> by <a href="https://github.com/tcavalin" target="_blank">Tiago Cavalin</a>
+        </footer>
+    </body>
+</html>
