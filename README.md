@@ -53,8 +53,8 @@ You can spice up adding other `<li>` tags and adjusting the size of each. Add th
     
   ## how to using stepProgress plugin ? ##
     
-    for using jquery plugin first should be include "jquery.stepProgress.js" to your page and 
-    select wraper of steps and use <code> nextStep() </code>. methode to move next step. 
+    for using plugin should be first include "jquery.stepProgress.js" to your page and 
+    select wraper in steps and use <code> nextStep() </code>. methode to move next step. 
     in this example our class is '.steps'  <code> $(".steps").nextStep() </code> and see example of code in below : 
     
     <code>
