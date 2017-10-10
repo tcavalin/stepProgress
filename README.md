@@ -57,9 +57,8 @@ You can spice up adding other `<li>` tags and adjusting the size of each. Add th
     select wraper in steps and use  nextStep() . methode to move next step. 
     in this example our class is '.steps'   $(".steps").nextStep()  and see example of code in below : 
     
-    <code>
      $("#next").click(function(){
                $(".steps").nextStep();
             });
-    </code>
+ 
 
